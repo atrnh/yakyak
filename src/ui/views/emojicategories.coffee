@@ -1,6 +1,10 @@
 module.exports = [
   {
+    #
+    #
     # People emojis!
+    #
+    #
     "range": [
       "\ud83d\ude00", "\ud83d\ude01", "\ud83d\ude02", "\ud83d\ude03",
       "\ud83d\ude04", "\ud83d\ude05", "\ud83d\ude06", "\ud83d\ude09",
@@ -69,7 +73,11 @@ module.exports = [
     "representation": "\ud83d\ude03",
     "title": "people"
   },
+  #
+  #
   # Animals/nature
+  #
+  #
   {
     "range": [
       "\ud83d\udca7", "\ud83d\udca6", "\ud83d\udca8", "\ud83d\udc35",
@@ -110,7 +118,11 @@ module.exports = [
     "representation": "\ud83d\udc3b",
     "title": "nature"
   },
+  #
+  #
   # Food
+  #
+  #
   {
     "range": ["\ud83c\udf47", "\ud83c\udf48",
       "\ud83c\udf49", "\ud83c\udf4a", "\ud83c\udf4b", "\ud83c\udf4c",
@@ -134,7 +146,11 @@ module.exports = [
     "representation": "\ud83c\udf54",
     "title": "food"
   },
+  #
+  #
   # Activity
+  #
+  #
   {
     "range": [
       "\ud83d\udd74", "\ud83d\udc7e", "\ud83c\udfaa", "\ud83c\udfad",
@@ -187,7 +203,11 @@ module.exports = [
     "representation": "\ud83c\udf07",
     "title": "travel-places"
   },
+  #
+  #
   # Objects
+  #
+  #
   {
     "range": [
       "\ud83d\udc8c", "\ud83d\udca3", "\ud83d\udd73", "\ud83d\udecd",
@@ -235,7 +255,11 @@ module.exports = [
     "representation": "\ud83d\udca1",
     "title": "objects"
   },
+  #
+  #
   # Symbols
+  #
+  #
   {
     "range": [
       "\ud83d\udc98", "\u2764", "\ud83d\udc93", "\ud83d\udc94", "\ud83d\udc95",
@@ -293,7 +317,11 @@ module.exports = [
     "representation": "\ud83d\udd23",
     "title": "symbols"
   },
+  #
+  #
   # Flags
+  #
+  #
   {
     "range": [
       "\ud83c\udde6\ud83c\uddeb", "\ud83c\udde6\ud83c\uddfd",
@@ -429,10 +457,16 @@ module.exports = [
     "representation": "\ud83c\udf8c",
     "title": "flags"
   },
-  # Kaomoji?
+  #
+  #
+  # Kaomoji
+  #
+  #
   {
     "range": [
-      "(＾▽＾)", "(✧ω✧)",
+      "(´｡• ω •｡`)", "(ﾉ´ヮ`)ﾉ*: ･ﾟ", "♡(｡- ω -)", "(⁄ ⁄•⁄ω⁄•⁄ ⁄)", "(・_・ヾ",
+      "(つ . •́ _ʖ •̀ .)つ", "(シ. .)シ", "ʕ •̀ ω •́ ʔ", "☆⌒(>。<)",
+      "＼(º □ º l|l)/", "( ⸝⸝•ᴗ•⸝⸝ )੭⁾⁾", "（￣^￣）凸", "٩(๑`^´๑)۶"
     ],
     "representation": "✧",
     "title": "kaomoji"
