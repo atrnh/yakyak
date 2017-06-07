@@ -1,8 +1,3 @@
-fs = require 'fs'
-jsonfile = require 'jsonfile'
-
-kaomojiFile = './src/kaomoji/kaomoji.json'
-
 emojiCategories = [
   {
     #
@@ -462,20 +457,6 @@ emojiCategories = [
     "representation": "\ud83c\udf8c",
     "title": "flags"
   },
-  #
-  #
-  # Kaomoji
-  #
-  #
-  # {
-  #   "range": [
-  #     "(´｡• ω •｡`)", "(ﾉ´ヮ`)ﾉ*: ･ﾟ", "♡(｡- ω -)", "(⁄ ⁄•⁄ω⁄•⁄ ⁄)", "(・_・ヾ",
-  #     "(つ . •́ _ʖ •̀ .)つ", "(シ. .)シ", "ʕ •̀ ω •́ ʔ", "☆⌒(>。<)",
-  #     "＼(º □ º l|l)/", "( ⸝⸝•ᴗ•⸝⸝ )੭⁾⁾", "（￣^￣）凸", "٩(๑`^´๑)۶"
-  #   ],
-  #   "representation": "✧",
-  #   "title": "kaomoji"
-  # },
 ]
 
 defaultKaomoji = {
