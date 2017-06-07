@@ -1,4 +1,6 @@
-# yakyak with kaomoji
+# Yakyak with Kaomoji
+
+...kaomojiyak?
 
 For information, check the [official repo](https://github.com/yakyak)!
 
@@ -6,6 +8,10 @@ For information, check the [official repo](https://github.com/yakyak)!
 
 (This app is in no way associated with or endorsed by Google)
 
+### Features
+Save text as your own kaomoji!
+
+![sshot](savemoji.png)
+
 ### coming soon:
-* Add/delete kaomoji
-* Add/delete emojis
+* Delete kaomoji
