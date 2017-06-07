@@ -1,4 +1,9 @@
-module.exports = [
+fs = require 'fs'
+jsonfile = require 'jsonfile'
+
+kaomojiFile = './src/kaomoji/kaomoji.json'
+
+emojiCategories = [
   {
     #
     #
@@ -462,13 +467,29 @@ module.exports = [
   # Kaomoji
   #
   #
-  {
-    "range": [
-      "(´｡• ω •｡`)", "(ﾉ´ヮ`)ﾉ*: ･ﾟ", "♡(｡- ω -)", "(⁄ ⁄•⁄ω⁄•⁄ ⁄)", "(・_・ヾ",
-      "(つ . •́ _ʖ •̀ .)つ", "(シ. .)シ", "ʕ •̀ ω •́ ʔ", "☆⌒(>。<)",
-      "＼(º □ º l|l)/", "( ⸝⸝•ᴗ•⸝⸝ )੭⁾⁾", "（￣^￣）凸", "٩(๑`^´๑)۶"
-    ],
-    "representation": "✧",
-    "title": "kaomoji"
-  },
+  # {
+  #   "range": [
+  #     "(´｡• ω •｡`)", "(ﾉ´ヮ`)ﾉ*: ･ﾟ", "♡(｡- ω -)", "(⁄ ⁄•⁄ω⁄•⁄ ⁄)", "(・_・ヾ",
+  #     "(つ . •́ _ʖ •̀ .)つ", "(シ. .)シ", "ʕ •̀ ω •́ ʔ", "☆⌒(>。<)",
+  #     "＼(º □ º l|l)/", "( ⸝⸝•ᴗ•⸝⸝ )੭⁾⁾", "（￣^￣）凸", "٩(๑`^´๑)۶"
+  #   ],
+  #   "representation": "✧",
+  #   "title": "kaomoji"
+  # },
 ]
+
+defaultKaomoji = {
+  "range": [
+    "(´｡• ω •｡`)", "(ﾉ´ヮ`)ﾉ*: ･ﾟ", "♡(｡- ω -)", "(⁄ ⁄•⁄ω⁄•⁄ ⁄)", "(・_・ヾ",
+    "(つ . •́ _ʖ •̀ .)つ", "(シ. .)シ", "ʕ •̀ ω •́ ʔ", "☆⌒(>。<)",
+    "＼(º □ º l|l)/", "( ⸝⸝•ᴗ•⸝⸝ )੭⁾⁾", "（￣^￣）凸", "٩(๑`^´๑)۶"
+  ],
+  "representation": "✧",
+  "title": "kaomoji"
+}
+
+myKaomoji = if localStorage.kaomoji then JSON.parse(localStorage.kaomoji) else defaultKaomoji
+
+emojiCategories.push(myKaomoji)
+
+module.exports = emojiCategories

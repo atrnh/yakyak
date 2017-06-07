@@ -3,7 +3,10 @@ clipboard   = require('electron').clipboard
 # {download}  = require('electron-dl') # See IMPORTANT below
 ContextMenu = remote.Menu
 
+emojiCategories = require './emojicategories'
 {isContentPasteable} = require '../util'
+
+kaomojiObj = emojiCategories[8]
 
 templateContext = (params, viewstate) ->
     #
@@ -24,6 +27,13 @@ templateContext = (params, viewstate) ->
                 console.log 'Possible problem with saving image. ', err
     }
     { type: 'separator' } if canShowSaveImg
+    {
+        label: i18n.__('Save As Kaomoji')
+        visible: true
+        click: () ->
+            kaomojiObj.range.push params.selectionText
+            localStorage.kaomoji = JSON.stringify(kaomojiObj)
+    }
     {
         label: i18n.__('menu.edit.undo:Undo')
         role: 'undo'
