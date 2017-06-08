@@ -28,13 +28,6 @@ templateContext = (params, viewstate) ->
     }
     { type: 'separator' } if canShowSaveImg
     {
-        label: i18n.__('Save As Kaomoji')
-        visible: true
-        click: () ->
-            kaomojiObj.range.push params.selectionText
-            localStorage.kaomoji = JSON.stringify(kaomojiObj)
-    }
-    {
         label: i18n.__('menu.edit.undo:Undo')
         role: 'undo'
         enabled: params.editFlags.canUndo
@@ -82,6 +75,15 @@ templateContext = (params, viewstate) ->
         role: 'paste'
         visible: (isContentPasteable() &&
             viewstate.state == viewstate.STATE_NORMAL) || params.isEditable
+    }
+    { type: 'separator' }
+    {
+        label: i18n.__('Save As Kaomoji')
+        visible: true
+        click: () ->
+            kaomojiObj.range.push params.selectionText
+            localStorage.kaomoji = JSON.stringify(kaomojiObj)
+            console.log params
     }].filter (n) -> n != undefined
 
 module.exports = (e, viewstate) ->
