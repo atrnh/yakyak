@@ -1,4 +1,6 @@
-# Yakyak with Kaomoji
+[I NEED HELP](https://github.com/atrnh/yakyakkao/issues)
+
+# 🐮 Yakyakao 
 
 ...kaomojiyak?
 
